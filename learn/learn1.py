@@ -130,3 +130,118 @@ from functools import reduce
 
 #print (sum(range(101)))
 
+# class Twest1(object):
+#
+#     def sum(self,a,b):
+#         return a+b
+#     def test(self):
+#         print 'hello,world!'
+#         print self.sum(2,3)
+#
+# a=Twest1()
+# # a.test()
+# class Animal(object):
+#
+#     def what(self):
+#         return 'this is a animal'
+#
+# class Cat(Animal):
+#
+#     def like(self):
+#         return 'cats like fish'
+#
+# class Dog(Animal):
+#
+#     def like(self):
+#        return 'dog like boon'
+#
+# class Test1(object):
+#     def dog_cat(self):
+#         dog1=Dog()
+#         print dog1.what()
+#         print dog1.like()
+#
+#         cat1=Cat()
+#         print cat1.what()
+#         print cat1.like()
+#
+# a=Test1()
+# a.dog_cat()
+#
+# def triangle(a,b,c):
+#     list1=[a,b,c]
+#     max1=max(list1)
+#     min1=min(list1)
+#     for i in list1:
+#         if i != max1 and i !=min1:
+#             mid1=i
+#
+#     if max1<min1+mid1:
+#
+#         print 'yes'
+#     else:
+#         print 'no'
+#
+# triangle(4,3,5)
+import random
+class Calculate(object):
+    def add1(self,a,b):
+        if type(a)==int and type(b)==int:
+            return a+b
+        else:
+            return '请输入整数'
+
+    def add2(self,a,b):
+        if type(a)==float and type(b)==float:
+            return a+b
+        else:
+            return '请输入浮点数'
+
+    def list1(self,l):
+        l0=[]
+        l1=[]
+        l2=[]
+        for i in l:
+            if i<0:
+                l1.append(i)
+            elif i>0:
+                l2.append(i)
+            else:
+                l0.append(i)
+        print l0
+        print l1
+        print l2
+        return l0,l1,l2
+
+
+    def list2(self):
+        l=[]
+        for i in range(20):
+            l.append(random.randint(0,100)) #随机生成20个范围在0-100内的整数
+        l1=[]
+        l2=[]
+        for j in l:
+            if j<50:
+                l1.append(j)
+            else:
+                l2.append(j)
+        with open('/users/ph/desktop/a.txt','w') as f1:
+            f1.write(str(l1))
+        with open('/users/ph/desktop/b.txt','w') as f2:
+            f2.write(str(l2))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
