@@ -227,12 +227,12 @@ class Calculate(object):
                 l2.append(j)
         with open('/users/ph/desktop/a.txt','w') as f1:
             f1.write(str(l1))
+
         with open('/users/ph/desktop/b.txt','w') as f2:
             f2.write(str(l2))
 
-
-
-
+a=random.random()
+b=random.randint(1,2)
 
 
 
