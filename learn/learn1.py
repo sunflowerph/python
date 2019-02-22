@@ -1,9 +1,14 @@
 #coding=utf-8
 # a0=dict(zip(('a','b','c','d','e'),(1,2,3,4,5)))
 # print (a0)
+# a1={'a':1,'b':2}
+# print (a1)
+# a3=list(zip((2,3,4,4),(1,2,3,4)))
+# print (a3)
 #
 # a3 = [a0[s] for s in a0]
 # print (a3)
+
 #
 #
 # a=[[i,i*i ]for i in range(3)]
@@ -11,8 +16,9 @@
 # a=[(1,2),(3,4)]
 # print (dict(a))
 # print (tuple(a))
-# c=zip((1,2,3),(4,5,6))
+# c=zip((1,2),(3,4))
 # print (dict(c))
+
 # def f(*args):
 #     print (args)
 # def n(**kwargs):
@@ -20,6 +26,9 @@
 #
 # a=f(1,2,3)
 # b=n({'a':3})
+
+
+
 # class A(object):
 #     def go(self):
 #         print ("go A go!")
@@ -37,6 +46,7 @@
 #
 # b=B()
 # b.go()
+
 
 # def calc_sum(*args):
 #     def sum():
@@ -139,7 +149,9 @@ from functools import reduce
 #         print self.sum(2,3)
 #
 # a=Twest1()
-# # a.test()
+# a.test()
+
+
 # class Animal(object):
 #
 #     def what(self):
@@ -183,65 +195,78 @@ from functools import reduce
 #         print 'no'
 #
 # triangle(4,3,5)
-import random
-class Calculate(object):
-    def add1(self,a,b):
-        if type(a)==int and type(b)==int:
-            return a+b
-        else:
-            return '请输入整数'
+# import random
+# class Calculate(object):
+#     def add1(self,a,b):
+#         if type(a)==int and type(b)==int:
+#             return a+b
+#         else:
+#             return '请输入整数'
+#
+#     def add2(self,a,b):
+#         if type(a)==float and type(b)==float:
+#             return a+b
+#         else:
+#             return '请输入浮点数'
+#
+#     def list1(self,l):
+#         l0=[]
+#         l1=[]
+#         l2=[]
+#         for i in l:
+#             if i<0:
+#                 l1.append(i)
+#             elif i>0:
+#                 l2.append(i)
+#             else:
+#                 l0.append(i)
+#         print l0
+#         print l1
+#         print l2
+#         return l0,l1,l2
+#
+#
+#     def list2(self):
+#         l=[]
+#         for i in range(20):
+#             l.append(random.randint(0,100)) #随机生成20个范围在0-100内的整数
+#         l1=[]
+#         l2=[]
+#         for j in l:
+#             if j<50:
+#                 l1.append(j)
+#             else:
+#                 l2.append(j)
+#         with open('/users/ph/desktop/a.txt','w') as f1:
+#             f1.write(str(l1))
+#
+#         with open('/users/ph/desktop/b.txt','w') as f2:
+#             f2.write(str(l2))
+#
+# a=random.random()
+# b=random.randint(1,2)
 
-    def add2(self,a,b):
-        if type(a)==float and type(b)==float:
-            return a+b
-        else:
-            return '请输入浮点数'
+#
+# print ('dear:\n\thello,I am peng!')
+# print ('hello'\
+#        'am')
+#
+# a=[1,2,3,4,4,5]
+# del a[3]
 
-    def list1(self,l):
-        l0=[]
-        l1=[]
-        l2=[]
-        for i in l:
-            if i<0:
-                l1.append(i)
-            elif i>0:
-                l2.append(i)
-            else:
-                l0.append(i)
-        print l0
-        print l1
-        print l2
-        return l0,l1,l2
-
-
-    def list2(self):
-        l=[]
-        for i in range(20):
-            l.append(random.randint(0,100)) #随机生成20个范围在0-100内的整数
-        l1=[]
-        l2=[]
-        for j in l:
-            if j<50:
-                l1.append(j)
-            else:
-                l2.append(j)
-        with open('/users/ph/desktop/a.txt','w') as f1:
-            f1.write(str(l1))
-
-        with open('/users/ph/desktop/b.txt','w') as f2:
-            f2.write(str(l2))
-
-a=random.random()
-b=random.randint(1,2)
+# import sys
+# print dir(sys.modules['__builtin__']) #查看内置函数
 
 
 
+s='python'
+print s[::3]# 每隔三个打印
+print s[::-1] #每隔一个倒着打印
+l=len(s)
+s1=[]
+while l>0:
+    s1.append(s[l-1])
+    l-=1
 
-
-
-
-
-
-
-
+print s1
 
