@@ -63,6 +63,7 @@ def write_table(): #可能是Excel版本有问题，创建的表格打开后看�
 if __name__ =='__main__':
     read_tables()
     write_table()
+    print('change')
 
 
 
