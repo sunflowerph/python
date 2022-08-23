@@ -260,13 +260,13 @@ from functools import reduce
 
 
 s='python'
-print s[::3]# 每隔三个打印
-print s[::-1] #每隔一个倒着打印
+print (s[::3])# 每隔三个打印
+print (s[::-1]) #每隔一个倒着打印
 l=len(s)
 s1=[]
 while l>0:
     s1.append(s[l-1])
     l-=1
 
-print s1
+print (s1)
 
