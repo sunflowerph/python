@@ -269,5 +269,3 @@ while l>0:
     l-=1
 
 print (s1)
-
-print("1")
